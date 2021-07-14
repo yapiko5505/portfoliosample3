@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/* 全体 */
+
+html {
+    font-size: 100%;
+}
+
+body{
+    font-family: "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro", sans-serif;
+}
+
+/* 画像 */
+
+#home {
+    background-image: url(../images/kokeshi2-2.JPG);
+    min-height: 100vh; 
+}
+
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+/* 文章 */
+
+.home-content {
+    color: brown;
+    padding-top: 50px;
+    margin-left: 40px;
+}
+
+.name-a {
+    font-size: 50px;
+}
+
+.name-b {
+    font-size: 35px;
+}
+
+/* giyhubアイコン */
+
+#my-aicon {
+    width: 5%;
+}
+
+/* ページ移動 */
+
+.move {
+    font-size: 25px;
+}
+
+a:hover {
+    background-color: green;
+    color: red;
+}
+
+a:active {
+    background-color: red;
+    color: green;
+}
