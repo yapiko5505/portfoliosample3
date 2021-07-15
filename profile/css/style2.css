@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/* 全体 */
+
+html {
+    font-size: 100%;
+}
+
+body{
+    font-family: "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro", sans-serif;
+    color: brown;
+    background-color: #fffac2;
+}
+
+p {
+    font-weight: bold;
+}
+
+
+/* ヘッダー */
+.nav li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+/* ヘッダーページ移動 */
+
+.move {
+    font-size: 25px;
+}
+
+a:hover {
+    background-color: green;
+    color: red;
+}
+
+a:active {
+    background-color: red;
+    color: green;
+}
+
+/* 自己紹介ページ*/ 
+.home {
+    display: flex;
+    justify-content: center;
+}
+
+#photo {
+    width: 30%;
+}
+
+#my-aicon {
+    width: 5%;
+}
+
+.menu {
+    font-weight: bold;
+}
+
+/* 作品紹介ページ */　
+.sakuhin-block {
+    display: flex;
+}
