@@ -47,7 +47,8 @@ a:active {
 }
 
 #photo {
-    width: 30%;
+    width: 15%;
+    padding-right: 300px;
 }
 
 #my-aicon {
