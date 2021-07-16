@@ -44,19 +44,3 @@ body{
 #my-aicon {
     width: 5%;
 }
-
-/* ページ移動 */
-
-.move {
-    font-size: 25px;
-}
-
-a:hover {
-    background-color: green;
-    color: red;
-}
-
-a:active {
-    background-color: red;
-    color: green;
-}

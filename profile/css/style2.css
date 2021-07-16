@@ -63,3 +63,46 @@ a:active {
 .sakuhin-block {
     display: flex;
 }
+
+/* お問い合わせページ */
+form div {
+    padding: 5px;
+}
+
+.name-d {
+    font-weight: bold;
+}
+
+input[name="name"] { 
+    width: 30em;
+}
+
+input[name="email"] { 
+    width: 30em;
+}
+
+input[name="postal1"] {
+    width: 3em;
+}
+
+input[name="postal2"] {
+    width: 5em;
+}
+
+input[name="address"] {
+    width: 30em;
+}
+
+input[name="birth"] {
+    width: 10em;
+}
+
+textarea {
+    width: 30em;
+    height: 6em;
+}
+
+input[type="submit"] {
+    margin: 20px 0;
+    width: 30em;
+}

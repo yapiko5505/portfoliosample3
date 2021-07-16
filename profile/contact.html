@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品集</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <header class="title">
+        <h2 class="name-a">Yasuko Tatebayashi Web Application Developer</h2>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">表紙</a></li>
+                <li> <a href="profile.html">作品内容</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="name-a">お問い合わせ</h2>
+        <form method="POST" action="check2.php">
+            <div class="name-d">
+                氏名<br>
+                <input type="text" name="name" placeholder="氏名">
+            </div>
+            <div class="name-d">
+                Email<br>
+                <input type="text" name="email" placeholder="Email">
+            </div>
+            <div class="name-d">
+                電話番号　記入例：09012345678<br>
+                <input type="text" name="phone" placeholder="電話番号">
+            </div>
+            <div class="name-d">
+                郵便番号<br>
+                <input type="text" name="postal1" placeholder="000">-
+                <input type="text" name="postal2" placeholder="0000">
+            </div>
+            <div class="name-d">
+                住所<br>
+                <input type="text" name="address" placeholder="住所">
+            </div>
+            <div class="name-d">
+                性別<br>
+                <input type="radio" name="gendar" value="ladys" checked>女性
+                <input type="radio" name="gendar" value="mens">男性
+            </div>
+            <div class="name-d">
+                生年月日　記入例：19900101<br>
+                <input type="text" name="birth" placeholder="生年月日">
+            </div>
+            <div class="name-d">
+                お問い合わせの具体的な内容<br>
+                <textarea name="content"></textarea>
+            </div>
+            <div>
+                <input type="submit" name="submit" value="送信">
+            </div>
+        </form>
+        <section>
+            <div class="menu">
+                連絡先：
+                <ul>
+                    <li>E-mail：bloomingjewels7021@gmail.com</li>
+                    <li>phone：090-7173-9061</li> 
+                </ul>
+            </div>
+            <a href class="">
+                <p id="my-aicon"><img src="images/github (2).svg" alt="githubアイコン"></p>
+            </a>
+        </section>
+    </main>
+    
+</body>
+</html>
