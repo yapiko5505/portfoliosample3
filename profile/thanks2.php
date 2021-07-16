@@ -58,12 +58,12 @@
         mb_internal_encoding("UTF-8");
         mb_send_mail($email, $mail_sub, $mail_body, $mail_head);
 
-$sql = 'INSERT INTO pro_user (name, email, phone, postal1, postal2, address, gendar, birth, content)
- VALUES(" '.$name.' "," '.$email.' "," '.$phone.' "," '.$postal1.' "," '.$postal2.' "," '.$address.' "," '.$gendar.' "," '.$birth.' "," '.$content.' ", )';
-$stmt = $dbh->prepare($sql);
-$stmt->execute();
+        $sql = 'INSERT INTO pro_user (name, email, phone, postal1, postal2, address, gendar, birth, content)
+        VALUES(" '.$name.' "," '.$email.' "," '.$phone.' "," '.$postal1.' "," '.$postal2.' "," '.$address.' "," '.$gendar.' "," '.$birth.' "," '.$content.' ", )';
+        $stmt = $dbh->prepare($sql);
+        $stmt->execute();
 
-$dbh = null;
+        $dbh = null;
 }
 
 catch(Exception $e)

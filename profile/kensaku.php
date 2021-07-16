@@ -16,9 +16,9 @@
         $password = '';
         $dbh = new PDO($dsn, $user, $password);
 
-        $sql='SELECT * FROM pro_user WHERE code=?';
+        $sql='SELECT * FROM pro_user WHERE id=?';
         $stmt = $dbh->prepare($sql);
-        $data[] = $code;
+        $data[] = $id;
         $stmt->execute($data);
 
         while(1)
