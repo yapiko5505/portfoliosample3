@@ -15,6 +15,7 @@
 
 ?>
 
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -24,17 +25,11 @@
     <title>作品集</title>
 </head>
 <body>
-    <p>スタッフ追加</p><br>
-   <form method="post" action="staff_add_check.php">
-       <p>スタッフ名を入力してください。</p>
-        <input type="text" name="name" style="width:200px"><br>
-        <p>パスワードを入力してください。</p>
-        <input type="password" name="pass" style="width:100px"><br>
-        <p>パスワードをもう一度入力してください。</p>
-        <input type="password" name="pass2" style="width:100px"><br><br>
-        <input type="button" onclick="history.back()" value="戻る">
-        <input type="submit" value="OK" >
-   </form>
-    
+    <p>スタッフ管理トップメニュー<br></P>
+        <br><a href="../staff/staff_list.php">スタッフ管理</a><br>
+        <a href="../staff/ichiran.php">問い合わせ一覧</a><br><br>
+        <a href="../staff/kensaku.html">アンケート検索</a><br><br>
+        <br><a href="staff_logout.php">ログアウト</a><br>
+    </p>
 </body>
 </html>
