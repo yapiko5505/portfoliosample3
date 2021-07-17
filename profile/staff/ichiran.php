@@ -8,12 +8,12 @@
 </head>
 <body>
     <?php 
-        $dsn = 'mysql:dbname=profiles; host=localhost';
+        $dsn = 'mysql:dbname=profiles;host=localhost';
         $user = 'root';
         $password = '';
         $dbh = new PDO($dsn, $user, $password);
 
-        $sql='SELECT * FROM pro_user WHERE 1';
+        $sql='SELECT * FROM pro_users WHERE 1';
         $stmt = $dbh->prepare($sql);
         $stmt->execute();
 
@@ -39,6 +39,6 @@
 
         $dbh = null;
     ?>
-    <br><a href="make.html">メニューに戻る</a>
+    <br><a href="staff_top.php">メニューに戻る</a>
 </body>
 </html>

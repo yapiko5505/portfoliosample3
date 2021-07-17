@@ -16,7 +16,7 @@
         $password = '';
         $dbh = new PDO($dsn, $user, $password);
 
-        $sql='SELECT * FROM pro_user WHERE id=?';
+        $sql='SELECT * FROM pro_users WHERE id=?';
         $stmt = $dbh->prepare($sql);
         $data[] = $id;
         $stmt->execute($data);
@@ -43,6 +43,6 @@
 
         $dbh = null;
     ?>
-    <br><a href="kensaku.html">検索画面に戻る</a>
+    <br><a href="staff_top.php">検索画面に戻る</a>
 </body>
 </html>

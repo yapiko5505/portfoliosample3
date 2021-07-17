@@ -27,7 +27,8 @@
     try
     {
         $dbh = new PDO($dsn, $user, $password);
-        $dbh->query('SET NAMES utf8');
+        // $dbh->query('SET NAMES utf8');
+        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         $name = htmlspecialchars($name);
         $email = htmlspecialchars($email);
