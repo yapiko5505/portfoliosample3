@@ -25,10 +25,12 @@
 </head>
 <body>
     <?php
+            require_once('../kansu/common.php');
 
-            $staff_code=$_POST['id'];
-            $staff_name=$_POST['name'];
-            $staff_pass=$_POST['pass'];
+            $post=sanitize($_POST);
+            $staff_code=$post['id'];
+            $staff_name=$post['name'];
+            $staff_pass=$post['pass'];
             $dsn = 'mysql:dbname=profiles;host=localhost;charset=utf8';
             $user = 'root';
             $password = '';

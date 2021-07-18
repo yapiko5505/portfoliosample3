@@ -1,7 +1,10 @@
 <?php
 
-    $staff_code=$_POST['id'];
-    $staff_pass=$_POST['pass'];
+    require_once('../kansu/common.php');
+
+    $post=sanitize($_POST);
+    $staff_code=$post['id'];
+    $staff_pass=$post['pass'];
 
     $staff_pass=md5($staff_pass);
 

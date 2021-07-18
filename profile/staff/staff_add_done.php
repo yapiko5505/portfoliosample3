@@ -26,7 +26,6 @@
 <body>
     <?php
         
-        
             $staff_name=$_POST['name'];
             $staff_pass=$_POST['pass'];
 
