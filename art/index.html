@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee</title>
+    <link rel="stylesheet" href="css/reboot.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1><img src="images/thecoffeehouse.svg" alt="The coffeehouse"></h1>
+        <!-- ナビゲーション -->
+        <nav class="header-nav site-header-section">
+            <ul>
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">ブログ</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- お知らせ -->
+        <section id="news" class="container">
+            <h2>お知らせ</h2>
+            <dl>
+                <dt>2021.01.23</dt>
+                <dd>電源付きのお席を用意しました。</dd>
+                <dt>2020.11.30</dt>
+                <dd>営業時間の変更</dd>
+            </dl>
+        </section>
+        <section id="blogs">
+            <h2>From The coffeehouse</h2>
+            <!-- ブログのアイテム1 -->
+            <div class="blog-items">
+                <a href="#">
+                    <img src="images/field.jpg" alt="サムネイルイメージ">
+                    <h3>晴れた日には外のテラスで</h3>
+                    <p>晴れた日には外のテラスもご利用いただけます。庭の緑を眺めながら過ごす午後は格別です。</p>
+                </a>
+            </div>
+            <!--ブログのアイテム2  -->
+            <div class="blog-items">
+                <a href="#">
+                    <img src="images/cowork.jpg" alt="サムネイルイメージ">
+                    <h3>電源付きのお席あります。</h3>
+                    <p>リモートワークでお使いいただけるように、各テーブルに電源をご用意しました。</p>
+                </a>
+            </div>
+            <!--ブログのアイテム3  -->
+            <div class="blog-items">
+                <a href="#">
+                    <img src="images/cafe.jpg" alt="サムネイルイメージ">
+                    <h3>The CoffeeHouse</h3>
+                    <p>営業時間のお知らせ</p>
+                </a>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <!-- メールマガジンの登録 -->
+        <section>
+            <h2>メールマガジンの登録</h2>
+            <p>店舗のお知らせや季節のお便りをメールマガジンとして配信しております。ご利用の方は下記のフォームにメールアドレスを入力し、ご登録ください。</p>
+
+            <form action="#">
+                <label for="mailaddress">メールアドレス</label>
+                <input type="email" name="mailaddress" id="mailaddress" placeholder="eg; name@example.jp">
+                <input type="submit" value="登録する">
+            </form>
+        </section>
+    </main>
+    <!-- フッター -->
+    <footer>
+        <div class="container">
+            <small>&copy; Copyright2021 -MdN Corpration Co., Ltd</small>
+        </div>
+    </footer>
+</body>
+</html>
