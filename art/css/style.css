@@ -50,11 +50,36 @@ img {
 }
 
 header {
+    background-image: url(../images/coffee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     height:520px;
+}
+
+.header-nav ul {
+    list-style: none;
+    list-style-position: outside;
+    margin: 1rem 0;
+    padding: 0;
+    font-size: 0.9rem;
+}
+
+.site-header-section li {
+    display: inline;
+    margin: 0 1rem 0 0;
+}
+
+.header-nav a {
+    color: #FFFFFF;
 }
 
 section {
     margin: 2rem 0;
+}
+
+#blogs h2 {
+    display: none;
 }
 
 .blog-items img {
@@ -73,6 +98,23 @@ section {
     color: #555555;
 }
 
+.divider {
+    width: 100%;
+    height:420px;
+    background-image: url(../images/tabletop.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#mail-magazine p {
+    font-size: 0.9rem;
+    line-height: 1.35;
+    color: #555555;
+}
+
+#mail-magazine form {
+    margin: 2rem 0;
+}
 input[type=email] {
     border-radius: 0.3rem;
     border: 1px solid #999999;
@@ -91,3 +133,64 @@ input[type=submit] {
 footer {
     background-color: #F6F6F6;
 }
+
+@media(min-width:768px) {
+    .site-header{
+        display: flex;
+        justify-content: space-between;
+        max-width: 90%;
+        margin:0 auto;
+    }
+
+    .site-header-section {
+        display: flex;
+        align-items: center;
+    }
+
+    .site-header-section li {
+        margin:0 0 0 1rem;
+    }
+
+    #news[class="container"] {
+        max-width: 50%;
+        margin: 2rem auto;
+    }
+
+    #news h2 {
+        text-align: center;
+    }
+
+    .news-list {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 100px 1fr;
+    }
+
+    #blogs[class="container"] {
+        max-width: 90%;
+        margin:2rem auto;
+    }
+
+    .blog-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 1rem;
+    }
+
+    #mail-magazine[class="container"] {
+        max-width: 50%;
+        margin: 2rem auto;
+    }
+
+    #mail-magagine h2 {
+        text-align: center;
+    }
+    #mail-magagine p {
+        font-size: 1.1rem;
+    }
+
+    #mail-magagine form {
+        text-align: center;
+    }
+} 
