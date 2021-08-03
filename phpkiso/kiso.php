@@ -1,16 +1,13 @@
 <?php
-$skip = 33;
-$count = 0;
-while($count<100) {
-    if($count == $skip){
-        $count++;
-        continue;
-    }
-    echo "{$count}.\n";
-    $count++;   
+
+$array = array(
+    '名前' => '山田',
+    '住所' => '愛媛',
+    '年齢' => '20歳',
+);
+
+foreach($array as $key => $val) {
+    echo $key.':';
+    echo $val.'<br>';
 }
-
-echo "\n";
-echo "処理終了";
-
 ?>
