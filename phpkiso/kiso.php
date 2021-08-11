@@ -1,13 +1,19 @@
 <?php
+    $start=1;
+    $end=100;
+    $total=0;
+    while($start<=$end){
+        $total+=$start;
+        $start++;
+    }
+    echo $total;
+    
+    $start=1;
+    $end=100;
+    $total=0;
+    for($i=$start; $i<=$end; $i++) {
+        $total+=$i;
+    }
+    echo $total;
 
-$array = array(
-    '名前' => '山田',
-    '住所' => '愛媛',
-    '年齢' => '20歳',
-);
-
-foreach($array as $key => $val) {
-    echo $key.':';
-    echo $val.'<br>';
-}
 ?>
