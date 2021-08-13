@@ -1,19 +1,16 @@
 <?php
-    $start=1;
-    $end=100;
-    $total=0;
-    while($start<=$end){
-        $total+=$start;
-        $start++;
-    }
-    echo $total;
-    
-    $start=1;
-    $end=100;
-    $total=0;
-    for($i=$start; $i<=$end; $i++) {
-        $total+=$i;
-    }
-    echo $total;
+$mbango=$_POST['mbango'];
 
+$hoshi['M1']='カニ星雲';
+$hoshi['M31']='アンドロメダ大星雲';
+$hoshi['M42']='オリオン大星雲';
+$hoshi['M45']='すばる';
+$hoshi['M57']='ドーナツ星雲';
+
+foreach($hoshi as $key =>$val) {
+    print $key.'は'.$val;
+    print '<br>';
+}
+print 'あなたが選んだ星は、';
+print $hoshi[$mbango];
 ?>
