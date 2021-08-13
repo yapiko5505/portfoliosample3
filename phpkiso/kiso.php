@@ -1,4 +1,5 @@
 <?php
+
 $mbango=$_POST['mbango'];
 
 $hoshi['M1']='カニ星雲';
@@ -13,4 +14,24 @@ foreach($hoshi as $key =>$val) {
 }
 print 'あなたが選んだ星は、';
 print $hoshi[$mbango];
+
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
